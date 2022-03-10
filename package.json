@@ -2,7 +2,7 @@
   "name": "black-highlighter",
   "displayName": "Black Highlighter",
   "description": "A quick way to black out or censor highlighted text.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.65.0"
   },
@@ -10,31 +10,15 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:black-highlighter.helloWorld"
+    "onCommand:black-highlighter.censor"
   ],
   "main": "./extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "black-highlighter.helloWorld",
-        "title": "Hello World"
+        "command": "black-highlighter.censor",
+        "title": "Censor"
       }
     ]
-  },
-  "scripts": {
-    "lint": "eslint .",
-    "pretest": "npm run lint",
-    "test": "node ./test/runTest.js"
-  },
-  "devDependencies": {
-    "@types/glob": "^7.2.0",
-    "@types/mocha": "^9.1.0",
-    "@types/node": "14.x",
-    "@types/vscode": "^1.65.0",
-    "@vscode/test-electron": "^2.1.2",
-    "eslint": "^8.9.0",
-    "glob": "^7.2.0",
-    "mocha": "^9.2.1",
-    "typescript": "^4.5.5"
   }
 }
